@@ -1,7 +1,7 @@
 <template>
  <header class="header">
   <nav class="navbar">
-   <a href="#" class="nav-logo">HJ</a>
+   <!-- <a href="#" class="nav-logo">HJ</a> -->
    <ul
     class="nav-menu"
     :class="{ active: showMobileMenu }"
@@ -74,6 +74,8 @@ a {
  text-decoration: none;
 }
 .header {
+ position: fixed;
+ right: 0;
  border-bottom: 1px solid #e2e8f0;
 }
 
@@ -124,42 +126,41 @@ a {
  color: #482ff7;
 }
 
-@media only screen and (max-width: 768px) {
- .nav-menu {
-  position: fixed;
-  left: -100%;
-  top: 5rem;
-  flex-direction: column;
-  background-color: #fff;
-  width: 100%;
-  border-radius: 10px;
-  text-align: center;
-  transition: 0.3s;
-  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
- }
+.nav-menu {
+ position: fixed;
+ right: -100%;
+ top: 5rem;
+ flex-direction: column;
+ background-color: #fff;
+ width: 25%;
+ height: 50%;
+ border-radius: 10px;
+ text-align: center;
+ transition: 0.3s;
+ box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
 
- .nav-menu.active {
-  left: 0;
- }
+.nav-menu.active {
+ right: 0;
+}
 
- .nav-item {
-  margin: 2.5rem 0;
- }
+.nav-item {
+ margin: 2.5rem 0;
+}
 
- .hamburger {
-  display: block;
-  cursor: pointer;
- }
- .hamburger.active .bar:nth-child(2) {
-  opacity: 0;
- }
+.hamburger {
+ display: block;
+ cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+ opacity: 0;
+}
 
- .hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
- }
+.hamburger.active .bar:nth-child(1) {
+ transform: translateY(8px) rotate(45deg);
+}
 
- .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
- }
+.hamburger.active .bar:nth-child(3) {
+ transform: translateY(-8px) rotate(-45deg);
 }
 </style>
