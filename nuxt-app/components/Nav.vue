@@ -1,23 +1,37 @@
 <template>
-<nav role="navigation">
-  <div id="menuToggle">
-
-    <input type="checkbox" />
-    
-    <span></span>
-    <span></span>
-    <span></span>
-    
-
-    <ul id="menu">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
-      <a href="#"><li>Contact</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-    </ul>
-  </div>
-</nav>
+ <header class="header">
+  <nav class="navbar">
+   <!-- <a href="#" class="nav-logo">HJ</a> -->
+   <ul
+    class="nav-menu"
+    :class="{ active: showMobileMenu }"
+    @click="showMobileMenu = !showMobileMenu"
+   >
+    <li class="nav-item">
+     <NuxtLink to="/" class="nav-link">About</NuxtLink>
+    </li>
+    <li class="nav-item">
+     <NuxtLink to="/" class="nav-link">Projects</NuxtLink>
+    </li>
+    <li class="nav-item">
+     <NuxtLink to="/" class="nav-link">Blog</NuxtLink>
+    </li>
+    <li class="nav-item">
+     <NuxtLink to="/" class="nav-link">Resume</NuxtLink>
+    </li>
+   </ul>
+   <div
+    class="hamburger"
+    :class="{ active: showMobileMenu }"
+    @click="showMobileMenu = !showMobileMenu"
+   >
+    >
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+   </div>
+  </nav>
+ </header>
 </template>
 
 <script>
@@ -31,162 +45,122 @@ export default {
  },
  methods: {
   closeMenu() {
+   hamburger.classList.remove("active");
+   navMenu.classList.remove("active");
   },
  },
 };
 </script>
 
 <style scoped>
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+html {
+ font-size: 62.5%;
+ font-family: "Roboto", sans-serif;
 }
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
+li {
+ list-style: none;
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
+a {
+ text-decoration: none;
+}
+.header {
+ position: fixed;
+ right: 0;
+ border-bottom: 1px solid #e2e8f0;
 }
 
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem 1.5rem;
 }
 
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+.hamburger {
+ display: none;
 }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+.bar {
+ display: block;
+ width: 25px;
+ height: 3px;
+ margin: 5px auto;
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+ background-color: #101010;
 }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
+.nav-menu {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+.nav-item {
+ margin-left: 5rem;
 }
 
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+.nav-link {
+ font-size: 1.6rem;
+ font-weight: 400;
+ color: #475569;
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
+.nav-link:hover {
+ color: #482ff7;
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 20vw;
-
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+.nav-logo {
+ font-size: 2.1rem;
+ font-weight: 500;
+ color: #482ff7;
 }
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
+.nav-menu {
+ position: fixed;
+ right: -100%;
+ top: 5rem;
+ flex-direction: column;
+ background-color: #fff;
+ width: 25%;
+ height: 50%;
+ border-radius: 10px;
+ text-align: center;
+ transition: 0.3s;
+ box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+.nav-menu.active {
+ right: 0;
+}
+
+.nav-item {
+ margin: 2.5rem 0;
+}
+
+.hamburger {
+ display: block;
+ cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+ opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+ transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+ transform: translateY(-8px) rotate(-45deg);
 }
 </style>
