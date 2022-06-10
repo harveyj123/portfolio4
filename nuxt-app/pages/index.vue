@@ -1,7 +1,8 @@
 <template>
- <Nav></Nav>
+
 
  <div class="contianer">
+      <Nav></Nav>
   <div class="inner-cont">
    <h1 class="title">Harvey Jiang</h1>
    <h2>Full Stack Developer</h2>
@@ -45,9 +46,9 @@
    </ul>
   </div>
  </div>
- <div class="projects-cont">
+ <!-- <div class="projects-cont">
   <h2 class="sub-title">Projects</h2>
- </div>
+ </div> -->
 </template>
 
 <script setup>
