@@ -13,8 +13,8 @@ export default defineNuxtConfig({
     //     ],
 
     //   }
-    plugins: [
-        '~/plugins/gsap.min.js'
+    // plugins: [
+    //     '~/plugins/gsap.min.js'
 
-    ]
+    // ]
 })
