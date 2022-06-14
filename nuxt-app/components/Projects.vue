@@ -1,5 +1,5 @@
 <template>
- <div class="projects-cont">
+ <div class="projects-cont" @click="test">
   <h2 class="sub-title">Projects</h2>
   <div class="projects-inner-cont">
    <h3 class="titles">USO</h3>
@@ -46,6 +46,19 @@
  </div>
 </template>
 
+<script>
+export default {
+    mounted() {
+        console.log("mounted work")
+    },
+    methods: {
+        test() {
+            console.log("hi")
+        }
+    }
+    
+}
+</script>
 <style scoped>
 #logo {
  width: 25%;
