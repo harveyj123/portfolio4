@@ -1,5 +1,5 @@
 <template>
- <div class="projects-cont" @click="test">
+ <div class="projects-cont">
   <h2 class="sub-title">Projects</h2>
   <div class="projects-inner-cont">
    <h3 class="titles">USO</h3>
@@ -11,21 +11,24 @@
     />
     <div class="about-project">
      <p class="blurb">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-      asperiores incidunt totam. At eaque tempore, quae optio repellat
-      aliquid aliquam omnis labore, accusantium ea illo id commodi
-      necessitatibus tenetur itaque.
+      Worked in a 4 person group as a fullstack developer. I made the
+      backend to create the login and logout with auth0 and for the
+      leaderboards, and conneting the frontend with the backend with
+      aysnc fetch calls. In the Frontend I aided in the game machanics
+      using Pixi.js and other details like the audio bar.
      </p>
      <div class="button-cont">
       <a
        class="about-project-link"
        href="https://github.com/staten-island-tech/fullstack-frontend-4-plus-1-frontend"
+       target="_blank"
       >
        Code
       </a>
       <a
        class="about-project-link"
        href="https://uso-mania.netlify.app/"
+       target="_blank"
       >
        Demo
       </a>
@@ -48,16 +51,13 @@
 
 <script>
 export default {
-    mounted() {
-        console.log("mounted work")
-    },
-    methods: {
-        test() {
-            console.log("hi")
-        }
-    }
-    
-}
+ methods: {
+  //   test() {
+  //    let t1 = gsap.timeline();
+  //    t1.to(".project-img", { duration: 2, x: 100, opacity: 0.5 });
+  //   },
+ },
+};
 </script>
 <style scoped>
 #logo {
@@ -97,13 +97,14 @@ export default {
  display: flex;
  justify-content: center;
  align-items: center;
- height: 5%;
- font-size: 4rem;
+ height: 10%;
+ font-size: 3rem;
  width: 100%;
 }
 
 .titles {
- font-size: 2rem;
+ margin: 2rem;
+ font-size: 2.5rem;
 }
 .projects-inner-cont {
  width: 100%;
