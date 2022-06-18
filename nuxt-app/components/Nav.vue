@@ -18,7 +18,7 @@
    >
    <!-- <NuxtLink href="#" class="links">Blog</NuxtLink> -->
    <NuxtLink
-    to="../public/resume-tech.pdf"
+    to="/resume-tech.pdf"
     class="links"
     target="_blank"
     id="bold-link"
