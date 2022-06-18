@@ -17,7 +17,11 @@
     >Contact</NuxtLink
    >
    <!-- <NuxtLink href="#" class="links">Blog</NuxtLink> -->
-   <NuxtLink to="/resume" class="links" id="bold-link"
+   <NuxtLink
+    to="../assets/resume-tech.pdf"
+    class="links"
+    target="_blank"
+    id="bold-link"
     >Resume</NuxtLink
    >
   </div>

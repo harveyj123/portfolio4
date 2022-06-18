@@ -34,7 +34,7 @@
    </NuxtLink>
    <NuxtLink
     class="link-list-inner-cont"
-    to="/resume"
+    to="../assets/resume-tech.pdf"
     target="_blank"
    >
     <svg
