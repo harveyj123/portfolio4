@@ -4,10 +4,14 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     app: {
     head: {
+      title: 'Harvey Jiang Portfolio',
         meta: [
+        
           // <meta name="viewport" content="width=device-width, initial-scale=1">
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: 'author', content: 'Harvey Jiang' }
+          { name: 'author', content: 'Harvey Jiang' },
+          { name: 'keywords', content: 'frontend projects, personal site, resume' },
+          { name: 'description', content: 'Harvey Jiangs personal website with resume and projects' }
         ],
         script: [
           // <script src="https://myawesome-lib.js"></script>

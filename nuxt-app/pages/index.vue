@@ -1,8 +1,9 @@
 <template>
- <div>
+ <div class="site-cont">
   <Nav></Nav>
   <Home></Home>
   <Projects></Projects>
+  <Footer></Footer>
  </div>
 </template>
 
@@ -12,6 +13,9 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+}
+.site-cont {
+ width: 100vw;
 }
 
 .title {
@@ -27,17 +31,5 @@
 .icon {
  width: 3rem;
  height: 3rem;
-}
-
-.link-list {
- list-style-type: none;
- display: flex;
- justify-content: space-evenly;
- align-items: center;
- background-color: white;
- width: 60%;
- margin: 0;
- padding: 0;
- border-radius: 2rem;
 }
 </style>

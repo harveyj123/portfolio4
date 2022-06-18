@@ -12,10 +12,14 @@
   </div> -->
 
   <div class="nav-links">
-   <a href="#" class="links">Home</a>
-   <a href="#" class="links">Contact</a>
-   <a href="#" class="links">Blog</a>
-   <a href="#" class="links" id="bold-link">Resume</a>
+   <NuxtLink to="/" class="links">Home</NuxtLink>
+   <NuxtLink to="mailto:harveyjiang11@gmail.com" class="links"
+    >Contact</NuxtLink
+   >
+   <!-- <NuxtLink href="#" class="links">Blog</NuxtLink> -->
+   <NuxtLink to="/resume" class="links" id="bold-link"
+    >Resume</NuxtLink
+   >
   </div>
  </div>
 </template>
@@ -36,7 +40,7 @@ export default {
 .nav {
  display: flex;
  height: 5vh;
- width: 100%;
+ width: 100vw;
  background-color: #4d4d4d;
  position: fixed;
  z-index: 999;

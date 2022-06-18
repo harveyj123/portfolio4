@@ -12,18 +12,25 @@
     <div class="about-project">
      <p class="blurb">
       Worked in a 4 person group as a fullstack developer. I made the
-      backend to create the login and logout with auth0 and for the
-      leaderboards, and conneting the frontend with the backend with
+      backend to create the login and logout with auth0, leaderboards,
+      and settings by conneting the frontend with the backend with
       aysnc fetch calls. In the Frontend I aided in the game machanics
       using Pixi.js and other details like the audio bar.
      </p>
      <div class="button-cont">
       <a
        class="about-project-link"
-       href="https://github.com/staten-island-tech/fullstack-frontend-4-plus-1-frontend"
+       href="https://github.com/wilsonw13/uso-mania-frontend"
        target="_blank"
       >
-       Code
+       Frontend Code
+      </a>
+      <a
+       class="about-project-link"
+       href="https://github.com/wilsonw13/uso-mania-backend"
+       target="_blank"
+      >
+       Backend Code
       </a>
       <a
        class="about-project-link"
@@ -67,10 +74,12 @@ export default {
 
 .about-project-link {
  display: flex;
+ text-align: center;
  justify-content: center;
  text-decoration: none;
  align-items: center;
  border-radius: 2rem;
+ font-size: 1rem;
  background-color: grey;
  color: white;
  width: 25%;
