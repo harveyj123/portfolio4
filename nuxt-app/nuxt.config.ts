@@ -2,6 +2,18 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  css: ["~/assets/css/tailwind.css"],
+  build: {
+    transpile: ['gsap'],
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
     app: {
     head: {
       title: 'Harvey Jiang Portfolio',

@@ -1,92 +1,74 @@
 <template>
- <div class="nav">
-  <!-- <input type="checkbox" id="nav-check" /> -->
-  <div class="nav-title">HJ</div>
-
-  <!-- <div class="nav-btn">
-   <label for="nav-check">
-    <span></span>
-    <span></span>
-    <span></span>
-   </label>
-  </div> -->
-
-  <div class="nav-links">
-   <NuxtLink to="/" class="links">Home</NuxtLink>
-   <NuxtLink to="mailto:harveyjiang11@gmail.com" class="links"
+ <!-- <nav class="desk-nav">
+  <NuxtLink to="/" id="home-btn">Harvey Jiang</NuxtLink>
+  <ul class="link-wrapper">
+   <NuxtLink to="/projects" class="nav-item-desk">Projects</NuxtLink>
+   <NuxtLink to="mailto:harveyjiang11@gmail.com" class="nav-item-desk"
     >Contact</NuxtLink
    >
-   <!-- <NuxtLink href="#" class="links">Blog</NuxtLink> -->
-   <NuxtLink
-    to="/resume-tech.pdf"
-    class="links"
-    target="_blank"
-    id="bold-link"
+   <NuxtLink to="/resume-tech.pdf" class="nav-item-desk"
     >Resume</NuxtLink
    >
+  </ul>
+ </nav> -->
+
+ <nav
+  class="fixed z-50 flex flex-row w-full bg-primary ease-in-out duration-300 menu-container h-15"
+  ref="menu-container"
+ >
+  <div id="logo">HJ</div>
+
+  <div
+   class="bg-primary flex flex-row justify-start items-center gap-x-10 p-3 z-40"
+   ref="menu-options"
+  >
+   <NuxtLink to="/" class="text-white text-[0.8em] font-uni"
+    >Home</NuxtLink
+   >
+   <NuxtLink to="/projects" class="text-black text-[0.8em] font-uni"
+    >Projects</NuxtLink
+   >
+   <NuxtLink
+    href="mailto:harveyjiang11@gmail.com"
+    class="text-black text-[0.8em] font-uni"
+    >Contact</NuxtLink
+   >
   </div>
- </div>
+ </nav>
 </template>
 
 <script>
 export default {
- name: "Nav",
- mounted() {},
- data() {
-  return {
-   //    showMobileMenu: false,
-  };
- },
+ name: "DeskNav",
 };
 </script>
-
 <style scoped>
-.nav {
- display: flex;
- height: 5vh;
- width: 100vw;
- background-color: #4d4d4d;
- position: fixed;
- z-index: 999;
- color: white;
- align-content: center;
- justify-content: center;
- display: flex;
-}
-
-.links {
+#logo {
+ text-align: center;
+ width: 20%;
  text-decoration: none;
- color: white;
- height: 100%;
- align-items: center;
- justify-content: center;
- display: flex;
- width: 10%;
- border-radius: 2rem;
+ transition: all 0.4s;
+ margin: 1rem 0;
+ padding: 1rem 0;
+ font-size: 1rem;
+ color: #ca6e32;
+ font-family: "Bungee", cursive;
+ position: relative;
 }
-#bold-link {
- background-color: navy;
+#logo::after {
+ content: "";
+ height: 4px;
+ transform: scaleX(0);
+ transition: transform 0.25s ease;
+ transform-origin: left;
+ left: 0;
+ bottom: -4px;
+ width: 100%;
+ display: block;
+ position: absolute;
 }
-#bold-link:hover {
- scale: 1.05;
-}
-.links:hover {
- background-color: black;
-}
-.nav-links {
- justify-content: flex-end;
- display: flex;
- align-items: center;
- width: 90%;
- height: 100%;
-}
-.nav-title {
- height: 100%;
- background-color: black;
- width: 4%;
- align-items: center;
- justify-content: center;
- display: flex;
- border-radius: 2rem;
+#logo:hover::after {
+ background-color: #ca6e32;
+ transform: scaleX(1);
 }
 </style>
