@@ -1,6 +1,9 @@
 <template>
  <div>
+  <leftbar></leftbar>
+  <Nav></Nav>
   <projectpage />
+  <Footer></Footer>
  </div>
 </template>
 

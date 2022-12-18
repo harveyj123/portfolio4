@@ -22,7 +22,7 @@
    class="bg-primary flex flex-row justify-start items-center gap-x-10 p-3 z-40"
    ref="menu-options"
   >
-   <NuxtLink to="/" class="text-white text-[0.8em] font-uni"
+   <NuxtLink to="/" class="text-black text-[0.8em] font-uni"
     >Home</NuxtLink
    >
    <NuxtLink to="/projects" class="text-black text-[0.8em] font-uni"
@@ -32,6 +32,12 @@
     href="mailto:harveyjiang11@gmail.com"
     class="text-black text-[0.8em] font-uni"
     >Contact</NuxtLink
+   >
+   <NuxtLink
+    to="/resume-tech.pdf"
+    target="_blank"
+    class="text-black text-[0.8em] font-uni"
+    >Resume</NuxtLink
    >
   </div>
  </nav>

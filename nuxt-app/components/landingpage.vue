@@ -1,5 +1,5 @@
 <template>
- <div class="outer-div panel">
+ <div class="outer-div">
   <h1>Hello, my name is <span class="bold">Harvey</span>.</h1>
   <p>Welcome to my profile.</p>
  </div>
@@ -9,9 +9,10 @@
 .outer-div {
  width: 100vw;
  height: 100vh;
- display: grid;
- place-content: center;
- text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
  font-family: Courier New, monospace;
  background-color: rgba(255, 230, 230);
  overflow-x: hidden;
@@ -25,6 +26,7 @@
 }
 
 h1 {
+ color: #574142;
  font-size: 3.5vw;
  position: relative;
  width: max-content;
