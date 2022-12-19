@@ -8,7 +8,7 @@
    >Harveyjiang11@gmail.com</a
   >
   <a
-   href="https://github.com/AntoDono/Portfolio"
+   href="https://github.com/harveyj123"
    target="_blank"
    class="text-gray-300 font-fenix text-center"
   >

@@ -19,7 +19,7 @@
   <project-left
    image="https://res.cloudinary.com/dhjhxieah/image/upload/v1655069616/personal-site/ezgif.com-gif-maker_tdq2de.gif"
    image_name="Uso Mania web game Gif"
-   title="USO Manina."
+   title="USO Mania"
    description="A web based 2D rhythm game that features a leaderboard and authentication."
    :tags="[
     'Nuxt2',
@@ -37,7 +37,7 @@
   <project-right
    image="https://res.cloudinary.com/dhjhxieah/image/upload/v1671398579/personal-site/TIQC_q40jh5.jpg"
    image_name="TIQC marketplace Website"
-   title="TIQC marketplace Website"
+   title="TIQC Marketplace Website"
    description="An online marketplace/freelance site for exisiting and previous interns from Tech Incubator at Queens College"
    :tags="['wordpress']"
    link="https://harvey-dev.tiqc10x2.com/"

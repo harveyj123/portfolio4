@@ -6,11 +6,9 @@
    class="flex flex-col justify-items-center items-center mb-48 email"
   >
    <div class="rotate-90">
-    <a
-     href="mailto:harveyjiang11@gmail.com"
-     class="font-fenix text-gray-300 eanchor"
-     >harveyjiang11@gmail.com</a
-    >
+    <div class="font-fenix text-gray eanchor">
+     harveyjiang11(@)gmail.com
+    </div>
    </div>
   </div>
   <div

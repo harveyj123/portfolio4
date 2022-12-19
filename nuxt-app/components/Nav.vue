@@ -13,7 +13,7 @@
  </nav> -->
 
  <nav
-  class="fixed z-50 flex flex-row w-full bg-primary ease-in-out duration-300 menu-container h-15"
+  class="fixed z-50 flex flex-row w-full n ease-in-out duration-300 menu-container h-15"
   ref="menu-container"
  >
   <div id="logo">HJ</div>
@@ -49,6 +49,9 @@ export default {
 };
 </script>
 <style scoped>
+.n {
+ background-color: #d19fa0;
+}
 #logo {
  text-align: center;
  width: 20%;
