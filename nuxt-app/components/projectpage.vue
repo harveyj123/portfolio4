@@ -1,6 +1,6 @@
 <template>
  <div
-  class="pg-bg flex flex-col justify-center items-center gap-y-20 pt-28 pb-20"
+  class="pg-bg flex flex-col justify-center items-center gap-y-20 pt-28 pb-20 w-full"
  >
   <h2 class="text-black text-[3rem] font-bogart text-left">
    Projects
@@ -12,7 +12,7 @@
    title="SITHS Device Registration"
    description="A Website built to be deployed on ubuntu kiosks that helps connects teachers and DOE devices to the internet system at Staten Island Tech."
    :tags="['Django', 'python', 'postgress', 'ubuntu', 'Bash scripts']"
-   link=""
+   link="/projects"
    status="Featured Project"
   />
 
@@ -56,7 +56,7 @@
     'Django rest framework',
     'python',
    ]"
-   link="/"
+   link="/projects"
    status="Featured Project"
   />
  </div>
