@@ -11,7 +11,7 @@
    image_name="SITHS Wifi connection website Preview"
    title="SITHS Device Registration"
    description="A Website built to be deployed on ubuntu kiosks that helps connects teachers and DOE devices to the internet system at Staten Island Tech."
-   :tags="['Django', 'python', 'postgress', 'ubuntu', 'Bash scripts']"
+   :tags="['Django', 'python', 'postgress', 'ubuntu', 'Bash scripts','clearpass API']"
    status="Featured Project"
   />
 
