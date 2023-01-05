@@ -24,7 +24,7 @@
    </div>
   </div>
   <div class="flex justify-center pic-container">
-   <a :href="link" target="_blank" class="z-20 image">
+   <div class="z-20 image">
     <div>
      <img
       :src="image"
@@ -32,7 +32,7 @@
       :alt="image_name"
      />
     </div>
-   </a>
+   </div>
   </div>
  </div>
 </template>

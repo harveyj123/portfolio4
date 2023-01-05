@@ -1,7 +1,7 @@
 <template>
  <div class="flex container-flex">
   <div class="flex justify-center pic-container">
-   <a :href="link" target="_blank">
+   <div>
     <div>
      <img
       :src="image"
@@ -9,7 +9,7 @@
       :alt="image_name"
      />
     </div>
-   </a>
+   </div>
   </div>
   <div class="h-full flex items-center description max-w-[500px]">
    <div
