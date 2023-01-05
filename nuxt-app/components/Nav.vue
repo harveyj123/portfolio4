@@ -16,21 +16,22 @@
   class="fixed z-50 flex flex-row w-full n ease-in-out duration-300 menu-container h-15"
   ref="menu-container"
  >
-  <div id="logo">HJ</div>
+ <NuxtLink to="/" id="logo"
+    >HJ</NuxtLink
+   >
+
 
   <div
    class="bg-primary flex flex-row justify-start items-center gap-x-10 p-3 z-40"
    ref="menu-options"
   >
-   <NuxtLink to="/" class="text-black text-[0.8em] font-uni"
-    >Home</NuxtLink
-   >
-   <NuxtLink to="/projects" class="text-black text-[0.8em] font-uni"
+
+   <NuxtLink to="/projects" class="text-black text-[0.8em] font-uni "
     >Projects</NuxtLink
    >
    <NuxtLink
     href="mailto:harveyjiang11@gmail.com"
-    class="text-black text-[0.8em] font-uni"
+    class="text-black text-[0.8em] font-uni "
     >Contact</NuxtLink
    >
    <NuxtLink
@@ -80,4 +81,6 @@ export default {
  background-color: #ca6e32;
  transform: scaleX(1);
 }
+
+
 </style>

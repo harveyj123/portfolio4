@@ -1,6 +1,6 @@
 <template>
  <div
-  class="h-auto bg-transparent flex justify-center items-start z-20 relative"
+  class="h-auto bg-transparent flex justify-center items-start z-20 relative w-full"
   id="about"
  >
   <div
