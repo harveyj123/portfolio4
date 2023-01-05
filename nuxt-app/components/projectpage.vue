@@ -6,13 +6,12 @@
    Projects
   </h2>
 
-  <project-right
+  <project-rightds
    image="https://res.cloudinary.com/dhjhxieah/image/upload/v1671396596/personal-site/wifi-siths_obyazw.jpg"
    image_name="SITHS Wifi connection website Preview"
    title="SITHS Device Registration"
    description="A Website built to be deployed on ubuntu kiosks that helps connects teachers and DOE devices to the internet system at Staten Island Tech."
    :tags="['Django', 'python', 'postgress', 'ubuntu', 'Bash scripts']"
-   link="/projects"
    status="Featured Project"
   />
 
@@ -43,7 +42,7 @@
    link="https://harvey-dev.tiqc10x2.com/"
    status="Featured Project"
   />
-  <project-left
+  <project-leftds
    image="https://res.cloudinary.com/dhjhxieah/image/upload/v1671402942/personal-site/IBIS1_pytht3.jpg"
    image_name="IBIS Website"
    title="IBIS"
@@ -56,7 +55,6 @@
     'Django rest framework',
     'python',
    ]"
-   link="/projects"
    status="Featured Project"
   />
  </div>
