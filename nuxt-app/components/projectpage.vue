@@ -46,7 +46,7 @@
    image="https://res.cloudinary.com/dhjhxieah/image/upload/v1671402942/personal-site/IBIS1_pytht3.jpg"
    image_name="IBIS Website"
    title="IBIS"
-   description="A website that lets teachers make classes and assign courses to their students. The courses are meant for middle schools and teaches them how to build and deploy websites with HTML and CSS."
+   description="A website that lets teachers make classes and assign courses to their students. The courses are meant for middle schoolers and teaches them how to build and deploy websites with HTML and CSS on sites like netlify."
    :tags="[
     'Vue',
     'Nuxt3',
@@ -55,6 +55,15 @@
     'Django rest framework',
     'python',
    ]"
+   status="Featured Project"
+  />
+  <project-right
+   image="https://res.cloudinary.com/dhjhxieah/image/upload/v1673483173/personal-site/taste-of-china.png"
+   image_name="Taste of China Website"
+   title="Taste of China Website"
+   description="Created and customized a website for my family's Chinese restaurant, Taste of China Brooklyn, featuring an interactive menu and information about the establishment."
+   :tags="['Accessible HTML, Accessible CSS, SASS']"
+   link="https://tasteofchinabkyn.netlify.app/"
    status="Featured Project"
   />
  </div>
