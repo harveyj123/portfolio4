@@ -19,7 +19,7 @@
      </p>
     </div>
     <div class="flex w-full move-justify">
-     <a :href="link" target="_blank" aria-label="link to project"  >
+     <a :href="link" target="_blank" aria-label="link to project">
       <svg
        xmlns="http://www.w3.org/2000/svg"
        width="24"
