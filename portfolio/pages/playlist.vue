@@ -23,7 +23,7 @@
 <div class="mt-6 flex justify-between">
   <div class="flex">
   <button class="block bg-green-500 text-green-100 rounded-full py-2 px-10 mr-4">Play</button>
-
+w
   </div>
   <!-- <div class="text-gray-400 text-xs text-right tracking-wider">
     <p class="uppercase mb-2">Followers</p>

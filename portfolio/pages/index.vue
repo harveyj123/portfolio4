@@ -14,18 +14,19 @@
       </p>
       <div class="h-1/2 w-full flex">
         <ul class="h-full w-1/2">
-          <li class="text-2xl underline h-1/4 flex justify-start items-center">
+          <NuxtLink class="text-2xl underline h-1/4 flex justify-start items-center">
             Resume
-          </li>
-          <li class="text-2xl underline h-1/4 flex justify-start items-center">
+          </NuxtLink>
+
+          <NuxtLink to="/projects" class="text-2xl underline h-1/4 flex justify-start items-center">
             Portfolio
-          </li>
-          <li class="text-2xl underline h-1/4 flex justify-start items-center">
+          </NuxtLink>
+          <NuxtLink  to="/playlist" class="text-2xl underline h-1/4 flex justify-start items-center">
             My playlist
-          </li>
-          <li class="text-2xl underline h-1/4 flex justify-start items-center">
+          </NuxtLink>
+          <NuxtLink  to="" class="text-2xl underline h-1/4 flex justify-start items-center">
             Add your Music recomendation
-          </li>
+          </NuxtLink>
         </ul>
         <div class="relative h-full w-1/2">
           <nuxt-picture
