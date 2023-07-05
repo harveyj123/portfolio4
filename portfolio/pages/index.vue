@@ -44,7 +44,7 @@
             Add your Music recomendation
           </NuxtLink> -->
         </ul>
-        <div class=" h-full lg:h-full w-[75%]  xs:w-0  flex flex-col justify-center items-center">
+        <div class=" h-full lg:h-full w-[75%]    flex flex-col justify-center items-center">
             <img src="/imgs/album-img.jpg"  class="img sm:block xs:hidden " alt="">
           <audio controls class="lg:w-[70%] md:w-[80%] sm:w-[50%] sm:block xs:hidden  ">
             <source src="/music/suzume.opus">
