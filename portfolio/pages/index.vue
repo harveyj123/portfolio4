@@ -69,57 +69,57 @@ des: "Listen to my favorite songs"},{name: "contact",
 des: "Contact me through email or here"}];
   // const navLinks2: Array<string> = ["portfolio", "resume","playlist" ,"contact"];
 
-// let played = ref(false);
-// let playButton = ref(true);
+let played = ref(false);
+let playButton = ref(true);
 
-// let currDisplay = ref("none");
-// let zIndex = ref("1")
+let currDisplay = ref("none");
+let zIndex = ref("1")
 
-// let audio: any;
+let audio: any;
 
-// onMounted(() => {
-//   audio = new Audio("/music/suzume.opus");
-//   audio.loop = false; // path to file
-//   audio.volume = 0.3;
-// });
+onMounted(() => {
+  audio = new Audio("/music/suzume.opus");
+  audio.loop = false; // path to file
+  audio.volume = 0.3;
+});
 
-// onBeforeRouteLeave((to, from) => {
-//   audio.pause();
-// });
+onBeforeRouteLeave((to, from) => {
+  audio.pause();
+});
 
-// function playMusic() {
-//   if (played.value === false) {
-//     playButton.value = false;
-//     played.value = true;
-//     audio.play();
-//   } else {
-//     playButton.value = true;
-//     played.value = false;
-//     audio.pause();
-//   }
-// }
+function playMusic() {
+  if (played.value === false) {
+    playButton.value = false;
+    played.value = true;
+    audio.play();
+  } else {
+    playButton.value = true;
+    played.value = false;
+    audio.pause();
+  }
+}
 
-// function playMusicBtn() {
-//   if (played.value === false) {
-//     playButton.value = false;
-//     played.value = true;
-//     currDisplay.value = "";
-//     audio.play();
-//   } else {
-//     playButton.value = true;
-//     currDisplay.value = "";
-//     played.value = false;
-//     audio.pause();
-//   }
-// }
+function playMusicBtn() {
+  if (played.value === false) {
+    playButton.value = false;
+    played.value = true;
+    currDisplay.value = "";
+    audio.play();
+  } else {
+    playButton.value = true;
+    currDisplay.value = "";
+    played.value = false;
+    audio.pause();
+  }
+}
 
-// function showPlayButton() {
-//   currDisplay.value = "";
-// }
+function showPlayButton() {
+  currDisplay.value = "";
+}
 
-// function hidePlayButton() {
-//   currDisplay.value = "none";
-// }
+function hidePlayButton() {
+  currDisplay.value = "none";
+}
 </script>
 
 <style scoped>
