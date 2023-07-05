@@ -44,11 +44,34 @@
             Add your Music recomendation
           </NuxtLink> -->
         </ul>
-        <div class=" h-full lg:h-full w-[75%]    flex flex-col justify-center items-center">
-            <img src="/imgs/album-img.jpg"  class="img sm:block xs:hidden " alt="">
+        <div class=" h-full lg:h-full w-[50%] relative">
+          <nuxt-picture
+            @mouseover="showPlayButton()"
+            @mouseleave="hidePlayButton()"
+            @click="playMusic"
+            class="hov absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+            
+            height="750"
+            src="/imgs/album-img.jpg"
+          ></nuxt-picture>
+          <Icon
+            v-if="playButton"
+            :style="{ display: currDisplay, }"
+            class="right-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-20 w-20 play"
+            name="material-symbols:play-circle"
+          />
+          <Icon
+            v-else
+            :style="{ display: currDisplay }"
+            class="right-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-20 w-20 play"
+            name="material-symbols:pause-circle"
+          />
+          
+            <!-- <img src="/imgs/album-img.jpg"  class="img sm:block xs:hidden " alt="">
           <audio controls class="lg:w-[70%] md:w-[80%] sm:w-[50%] sm:block xs:hidden  ">
             <source src="/music/suzume.opus">
-        </audio>
+            
+        </audio> -->
         </div>
 
 
