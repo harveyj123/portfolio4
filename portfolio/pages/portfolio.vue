@@ -1,6 +1,6 @@
 <template>
     <div>
-        hello projects 
+        <projectpage></projectpage>
     </div>
 </template>
 

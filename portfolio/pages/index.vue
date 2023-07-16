@@ -51,6 +51,7 @@
           >
             {{ link.des }}
           </NuxtLink>
+          <NuxtLink class="m-3 xs:text-2xl lnk-hov lg:text-3xl lg:my-5" to="/resume.pdf" target="_blank" download="resume.pdf">Resume</NuxtLink>
         </div>
         <div
           class="flex justify-center items-center flex-col xs:h-[100%] xs:w-[50%] lg:hidden sm:flex xs:flex"
@@ -81,7 +82,6 @@ definePageMeta({
 const navLinks: Array<object> = [
   { name: "portfolio", des: "Portfolio" },
   { name: "blog", des: "Blog" },
-  { name: "resume", des: "Resume" },
   { name: "contact", des: "Contact" },
 ];
 // const navLinks2: Array<string> = ["portfolio", "resume","playlist" ,"contact"];
