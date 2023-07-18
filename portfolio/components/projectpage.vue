@@ -47,7 +47,7 @@
    status="Work Project"
    :derection_left= "false"
   />
-  <project
+  <!-- <project
    image="https://res.cloudinary.com/dhjhxieah/image/upload/v1671402942/personal-site/IBIS1_pytht3.jpg"
    image_name="IBIS Website"
    title="IBIS"
@@ -61,7 +61,7 @@
   
    ]"
 
-  />
+  /> -->
  </div>
 </template>
 
