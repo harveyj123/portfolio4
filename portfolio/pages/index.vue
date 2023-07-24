@@ -176,7 +176,7 @@ width: 60%;
 
 .bck-img {
   background: linear-gradient(#fafafaee, hsla(0, 0%, 98%, 0.884)),
-    url("imgs/backround-img.png");
+    url("../assets/imgs/backround-img.png");
 
   /* background-image: url("imgs/backround-img.webp"); */
   background-size: cover;
