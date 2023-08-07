@@ -17,13 +17,22 @@
       <p class="xs:text-lg m-2 lg:text-2xl lg:my-5">
         Outside of programming, I love trying new food out, playing badminton,
         and listing to music. If you have a song recommendation feel free to add
-        it to my <NuxtLink to="https://open.spotify.com/playlist/1dlDEsCrTUKIsH1xfUckAv?si=797626b6c5614708&pt=63f3b717356a2c1bce5271017cafa062" target="_blank" class="font-bold lnk-hov">public playlist</NuxtLink>
+        it to my
+        <NuxtLink
+          to="https://open.spotify.com/playlist/1dlDEsCrTUKIsH1xfUckAv?si=797626b6c5614708&pt=63f3b717356a2c1bce5271017cafa062"
+          target="_blank"
+          class="font-bold lnk-hov"
+          >public playlist</NuxtLink
+        >
       </p>
       <div class="w-full xs:hidden sm:hidden lg:block">
         <NuxtLink to="https://github.com/harveyj123" target="_blank">
           <Icon class="m-6 xs:text-3xl icon-hov" name="bi:github"></Icon>
         </NuxtLink>
-        <NuxtLink to="https://www.linkedin.com/in/harvey-jiang-557494234/" target="_blank">
+        <NuxtLink
+          to="https://www.linkedin.com/in/harvey-jiang-557494234/"
+          target="_blank"
+        >
           <Icon class="m-6 xs:text-3xl icon-hov" name="bi:linkedin"></Icon>
         </NuxtLink>
         <NuxtLink to="mailto:harveyjiang11@gmail.com">
@@ -51,7 +60,13 @@
           >
             {{ link.des }}
           </NuxtLink>
-          <NuxtLink class="m-3 xs:text-2xl lnk-hov lg:text-3xl lg:my-5" to="/Users/harveyjiang/Documents/GitHub/portfolio4/portfolio/assets/resume.pdf" target="_blank" download="resume.pdf">Resume</NuxtLink>
+          <NuxtLink
+            class="m-3 xs:text-2xl lnk-hov lg:text-3xl lg:my-5"
+            to="../static/resume.pdf"
+            target="_blank"
+
+            >Resume</NuxtLink
+          >
         </div>
         <div
           class="flex justify-center items-center flex-col xs:h-[100%] xs:w-[50%] lg:hidden sm:flex xs:flex"
@@ -59,7 +74,10 @@
           <NuxtLink to="https://github.com/harveyj123" target="_blank">
             <Icon class="m-3 xs:text-3xl icon-hov" name="bi:github"></Icon>
           </NuxtLink>
-          <NuxtLink to="https://www.linkedin.com/in/harvey-jiang-557494234/" target="_blank">
+          <NuxtLink
+            to="https://www.linkedin.com/in/harvey-jiang-557494234/"
+            target="_blank"
+          >
             <Icon class="m-3 xs:text-3xl icon-hov" name="bi:linkedin"></Icon>
           </NuxtLink>
           <NuxtLink to="mailto:harveyjiang11@gmail.com" target="_blank">
@@ -80,8 +98,8 @@ definePageMeta({
 });
 
 interface navLinks {
-  name: string
-  des: string
+  name: string;
+  des: string;
 }
 
 const navLinks: Array<navLinks> = [

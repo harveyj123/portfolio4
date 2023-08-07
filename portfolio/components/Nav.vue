@@ -10,9 +10,8 @@
       <div class="ml-10 lg:hidden m-auto">
         <NuxtLink
           class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-          to="/Users/harveyjiang/Documents/GitHub/portfolio4/portfolio/assets/resume.pdf"
+          to="../static/resume.pdf"
           target="_blank"
-          download="resume.pdf"
           >Resume</NuxtLink
         >
       </div>
@@ -76,9 +75,8 @@
           <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1">
             <NuxtLink
               class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              to="/Users/harveyjiang/Documents/GitHub/portfolio4/portfolio/assets/resume.pdf"
+              to="../static/resume.pdf"
               target="_blank"
-              download="resume.pdf"
               >resume</NuxtLink
             >
           </li>
