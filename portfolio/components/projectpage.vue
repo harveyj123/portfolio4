@@ -1,6 +1,6 @@
 <template>
  <div
-  class="pg-bg flex flex-col justify-center items-center gap-y-20 pt-28 pb-20 w-full"
+  class="pg-bg flex flex-col justify-center items-center gap-y-20 pt-28 pb-20 w-full bck-img"
  >
   <h2 class="text-black text-[3rem] font-bogart text-left">
    Projects
@@ -14,9 +14,7 @@
    :derection_left="false"
    description="A web based 2D rhythm game inspired by Osu Mania and guitar hero. Passion project built for AP CSP with 3 other group mates. It features a leaderboard and authentication."
    :tags="[
-    'Nuxt2',
-    'Vue',
-
+    'Nuxt',
     'mongodb',
     'Express',
     'Node.js',
@@ -24,6 +22,7 @@
    ]"
    link="https://uso-mania.netlify.app/"
    status="Featured Project"
+   
   />
 
   <project
@@ -32,7 +31,7 @@
    title="SITHS Device Registration"
 
    description="A Website built to be deployed on ubuntu kiosks that helps connects teachers and DOE devices to the internet system at Staten Island Tech."
-   :tags="['Django', 'python', 'postgress', 'ubuntu','clearpass API']"
+   :tags="['Django', 'python', 'Ubuntu','Clearpass API']"
    status="Work Project"
   />
 
@@ -65,15 +64,22 @@
  </div>
 </template>
 
-<script>
+<script setup lang="ts">
 
-export default {
 
- name: "projectpage",
-};
 </script>
 
 <style scoped>
+
+.bck-img {
+  background: linear-gradient(#fafafaee, hsla(0, 0%, 98%, 0.765)),
+    url("../assets/imgs/bck-projects.jpg");
+
+  /* background-image: url("imgs/backround-img.webp"); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 .pg-bg {
  background-color: white;
 }

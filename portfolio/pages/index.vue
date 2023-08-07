@@ -10,13 +10,13 @@
         My name is Harvey Jiang.
       </h1>
       <p class="xs:text-lg m-2 lg:text-2xl lg:my-5">
-        I am currently a freshman at the Universty at Buffalo studying computer
+        I am currently a freshman at the University at Buffalo studying computer
         science. I love tinkering with new tech and learning new skills to
-        develop cool and intresting websites/software.
+        develop cool and interesting websites/software.
       </p>
       <p class="xs:text-lg m-2 lg:text-2xl lg:my-5">
-        Outside of programing, I love trying new food out, playing badminton,
-        and listing to music. If you have a song recomendation feel free to add
+        Outside of programming, I love trying new food out, playing badminton,
+        and listing to music. If you have a song recommendation feel free to add
         it to my <NuxtLink to="https://open.spotify.com/playlist/1dlDEsCrTUKIsH1xfUckAv?si=797626b6c5614708&pt=63f3b717356a2c1bce5271017cafa062" target="_blank" class="font-bold lnk-hov">public playlist</NuxtLink>
       </p>
       <div class="w-full xs:hidden sm:hidden lg:block">
@@ -51,7 +51,7 @@
           >
             {{ link.des }}
           </NuxtLink>
-          <NuxtLink class="m-3 xs:text-2xl lnk-hov lg:text-3xl lg:my-5" to="/resume.pdf" target="_blank" download="resume.pdf">Resume</NuxtLink>
+          <NuxtLink class="m-3 xs:text-2xl lnk-hov lg:text-3xl lg:my-5" to="/Users/harveyjiang/Documents/GitHub/portfolio4/portfolio/assets/resume.pdf" target="_blank" download="resume.pdf">Resume</NuxtLink>
         </div>
         <div
           class="flex justify-center items-center flex-col xs:h-[100%] xs:w-[50%] lg:hidden sm:flex xs:flex"
@@ -79,8 +79,13 @@ definePageMeta({
   layout: "home",
 });
 
-const navLinks: Array<object> = [
-  { name: "portfolio", des: "Portfolio" },
+interface navLinks {
+  name: string
+  des: string
+}
+
+const navLinks: Array<navLinks> = [
+  { name: "projects", des: "Portfolio" },
   { name: "blog", des: "Blog" },
   { name: "contact", des: "Contact" },
 ];
