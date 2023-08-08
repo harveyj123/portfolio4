@@ -62,7 +62,7 @@
           </NuxtLink>
           <NuxtLink
             class="m-3 xs:text-2xl lnk-hov lg:text-3xl lg:my-5"
-            to="../public/resume.pdf"
+            to="/resume.pdf"
             target="_blank"
 
             >Resume</NuxtLink

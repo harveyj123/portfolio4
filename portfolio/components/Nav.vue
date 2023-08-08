@@ -1,16 +1,16 @@
 <template>
   <!-- Main navigation container -->
   <nav
-    class="relative flex w-full flex-nowrap items-center justify-between bg-[#FFFFFF] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+    class="z-30 flex w-full fixed flex-nowrap items-center justify-between bg-[#FFFFFF] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
   >
     <div class="flex w-full flex-wrap items-center justify-between px-3">
       <div class="ml-10">
-        <NuxtLink class="text-xl text-neutral-800" to="/">HJ</NuxtLink>
+        <NuxtLink class="text-xl text-neutral-800 hover:underline" to="/">HJ</NuxtLink>
       </div>
       <div class="ml-10 lg:hidden m-auto">
         <NuxtLink
           class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-          to="../public/resume.pdf"
+          to="/resume.pdf"
           target="_blank"
           >Resume</NuxtLink
         >
@@ -72,10 +72,11 @@
             >
           </li>
 
-          <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1">
+          <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1">      
             <NuxtLink
               class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              to="../public/resume.pdf"
+              to="
+              /resume.pdf"
               target="_blank"
               >resume</NuxtLink
             >
@@ -84,7 +85,7 @@
       </div>
     </div>
   </nav>
-  <div class="border w-screen lg:hidden">
+  <div class=" w-screen lg:hidden fixed border mt-11 z-30 bg-[#FFFFFF]">
     <div
       v-show="!showMenu"
       class="!visible mt-2 flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"

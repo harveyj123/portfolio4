@@ -1,6 +1,6 @@
 <template>
   <div v-if="derection_left" class="flex container-flex">
-    <div class="h-full flex items-center z-30 description max-w-[500px]">
+    <div class="h-full flex items-center description max-w-[500px]">
       <div class="font-fenix text-white relative flex flex-col gap-y-3 move">
         <p class="move-text text-accent1 text-black">{{ status }}</p>
         <h2 class="text-[3.5vmin] move-text font-uni text-black">
