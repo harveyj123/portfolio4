@@ -11,6 +11,21 @@ export default defineNuxtConfig({
     },
   },
   
+  app: {
+    head: {
+      title: "Harvey Jiang | Portfolio",
+      htmlAttrs: {
+        lang: "en",
+      },
+      meta: [
+        // <meta name="viewport" content="width=device-width, initial-scale=1">
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { hid: "description", name: "description", content: "Harvey Jiang's Portfolio Site" },
+        { name: "format-detection", content: "telephone=no" },
+      ],
+    }
+  },
 
   image: {
     // The screen sizes predefined by `@nuxt/image`:
