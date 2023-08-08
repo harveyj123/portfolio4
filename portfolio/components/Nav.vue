@@ -19,7 +19,7 @@
       <button
         class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
         type="button"
-        name="menu button"
+        aria-labelledby="menu button"
         @click="showMenu = !showMenu"
       >
         <!-- Hamburger icon -->
