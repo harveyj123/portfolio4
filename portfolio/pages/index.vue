@@ -26,16 +26,16 @@
         >
       </p>
       <div class="w-full xs:hidden sm:hidden lg:block">
-        <NuxtLink to="https://github.com/harveyj123" target="_blank">
+        <NuxtLink to="https://github.com/harveyj123" aria-label="To see more go to my Github" target="_blank">
           <Icon class="m-6 xs:text-3xl icon-hov" name="bi:github"></Icon>
         </NuxtLink>
         <NuxtLink
           to="https://www.linkedin.com/in/harvey-jiang-557494234/"
           target="_blank"
         >
-          <Icon class="m-6 xs:text-3xl icon-hov" name="bi:linkedin"></Icon>
+          <Icon class="m-6 xs:text-3xl icon-hov" aria-label="To see more go to my Linkedin" name="bi:linkedin"></Icon>
         </NuxtLink>
-        <NuxtLink to="mailto:harveyjiang11@gmail.com">
+        <NuxtLink to="/contact" aria-label="link to my contact page">
           <Icon
             class="m-6 xs:text-3xl icon-hov"
             name="material-symbols:mail"
@@ -72,15 +72,15 @@
           class="flex justify-center items-center flex-col xs:h-[100%] xs:w-[50%] lg:hidden sm:flex xs:flex"
         >
           <NuxtLink to="https://github.com/harveyj123" target="_blank">
-            <Icon class="m-3 xs:text-3xl icon-hov" name="bi:github"></Icon>
+            <Icon class="m-3 xs:text-3xl icon-hov" aria-label="To see more go to my Github" name="bi:github"></Icon>
           </NuxtLink>
           <NuxtLink
             to="https://www.linkedin.com/in/harvey-jiang-557494234/"
             target="_blank"
           >
-            <Icon class="m-3 xs:text-3xl icon-hov" name="bi:linkedin"></Icon>
+            <Icon class="m-3 xs:text-3xl icon-hov" aria-label="To see more go to my Linkdedin" name="bi:linkedin"></Icon>
           </NuxtLink>
-          <NuxtLink to="mailto:harveyjiang11@gmail.com" target="_blank">
+          <NuxtLink to="/contact" aria-label="link to my Contact Page" target="_blank">
             <Icon
               class="m-3 xs:text-3xl icon-hov"
               name="material-symbols:mail"

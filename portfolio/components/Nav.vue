@@ -19,7 +19,7 @@
       <button
         class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
         type="button"
-        aria-labelledby="menu button"
+        aria-label="Click to show Nav bar"
         @click="showMenu = !showMenu"
       >
         <!-- Hamburger icon -->
@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-const navLinks: Array<string> = ["blog", "projects", "experience", "contact"];
+const navLinks: Array<string> = ["blog", "projects", "contact"];
 let showMenu = ref(true);
 </script>
 
