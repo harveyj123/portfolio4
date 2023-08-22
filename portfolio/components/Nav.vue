@@ -1,7 +1,7 @@
 <template>
   <!-- Main navigation container -->
   <nav
-    class="z-30 flex w-full fixed flex-nowrap items-center justify-between bg-[#FFFFFF] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+    class="z-50 flex w-full fixed flex-nowrap items-center justify-between bg-[#FFFFFF] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
   >
     <div class="flex w-full flex-wrap items-center justify-between px-3">
       <div class="ml-10">
@@ -86,7 +86,7 @@
       </div>
     </div>
   </nav>
-  <div class=" w-screen lg:hidden fixed border mt-11 z-30 bg-[#FFFFFF]">
+  <div class=" w-screen lg:hidden fixed border mt-11 z-50 bg-[#FFFFFF]">
     <div
       v-show="!showMenu"
       class="!visible mt-2 flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-const navLinks: Array<string> = ["blog", "projects", "contact"];
+const navLinks: Array<string> = [ "projects", "contact"];
 let showMenu = ref(true);
 </script>
 
