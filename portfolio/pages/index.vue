@@ -71,12 +71,13 @@
         <div
           class="flex justify-center items-center flex-col xs:h-[100%] xs:w-[50%] lg:hidden sm:flex xs:flex"
         >
-          <NuxtLink to="https://github.com/harveyj123" target="_blank">
+          <NuxtLink to="https://github.com/harveyj123" aria-label="To see more go to my Github" target="_blank">
             <Icon class="m-3 xs:text-3xl icon-hov" aria-label="To see more go to my Github" name="bi:github"></Icon>
           </NuxtLink>
           <NuxtLink
             to="https://www.linkedin.com/in/harvey-jiang-557494234/"
             target="_blank"
+            aria-label="To see more go to my Linkdedin"
           >
             <Icon class="m-3 xs:text-3xl icon-hov" aria-label="To see more go to my Linkdedin" name="bi:linkedin"></Icon>
           </NuxtLink>
@@ -199,7 +200,7 @@ width: 60%;
 
 .bck-img {
   background: linear-gradient(#fafafaee, hsla(0, 0%, 98%, 0.884)),
-    url("../assets/imgs/backround-img.png");
+    url("../assets/imgs/backround-img.webp");
 
   /* background-image: url("imgs/backround-img.webp"); */
   background-size: cover;

@@ -58,7 +58,7 @@
 <style scoped>
 .bck-img {
   background: linear-gradient(#fafafaee, hsla(0, 0%, 98%, 0.765)),
-    url("../assets/imgs/bck-projects1.jpg");
+    url("../assets/imgs/bck-projects1.webp");
 
   /* background-image: url("imgs/backround-img.webp"); */
   background-size: cover;
