@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-const navLinks: Array<string> = [ "projects", "contact"];
+const navLinks: Array<string> = [ "projects", "contact", "experience"];
 let showMenu = ref(true);
 </script>
 

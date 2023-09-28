@@ -107,6 +107,8 @@ const navLinks: Array<navLinks> = [
   { name: "projects", des: "Portfolio" },
   // { name: "blog", des: "Blog" },
   { name: "contact", des: "Contact" },
+
+  { name: "experience", des: "Experience" },
 ];
 // const navLinks2: Array<string> = ["portfolio", "resume","playlist" ,"contact"];
 
