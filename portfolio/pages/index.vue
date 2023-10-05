@@ -16,7 +16,7 @@
       </p>
       <p class="xs:text-lg m-2 lg:text-2xl lg:my-5">
         Outside of programming, I love trying new food out, playing badminton,
-        and listing to music. If you have a song recommendation feel free to add
+        and listening to music. If you have a song recommendation feel free to add
         it to my
         <NuxtLink
           to="https://open.spotify.com/playlist/1dlDEsCrTUKIsH1xfUckAv?si=797626b6c5614708&pt=63f3b717356a2c1bce5271017cafa062"
