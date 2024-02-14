@@ -10,7 +10,7 @@
         My name is Harvey Jiang.
       </h1>
       <p class="xs:text-lg m-2 lg:text-2xl lg:my-5">
-        I am currently a freshman at the University at Buffalo studying computer
+        I am currently a student at the University at Buffalo studying computer
         science. I love tinkering with new tech and learning new skills to
         develop cool and interesting websites/software.
       </p>
