@@ -7,8 +7,6 @@
         title="Research Assistant at X-Lab@UB"
         date="September 2023 - Current"
         :des=points1
-
-"
       ></Exptime>
     <Exptime
         title="Summer Design Institute: Software Engineer Intern for Staten Island Tech "
