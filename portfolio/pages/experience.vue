@@ -23,15 +23,17 @@
 </template>
 
 <script setup lang="ts">
+
 const points1 = [
-  "-Identified and presented strategies like Nvidia Triton to better scale MLModelScope - a platform for evaluating, profiling and benchmarking ML models",
+  "-Created parameterized scripts to benchmark ML model performance, analyze metrics, and generate insights from profile traces for optimization",
   "-Decoupled Hugging Face pipeline models into distinct preprocessing, prediction, and post-processing stages",
-  "-Collaborated with a postdoctoral researcher on a Human-Computer Interaction (HCI) study to evaluate student-teacher interactions within the reading realm",
+  "-Dockerized scripts to ensure consistent environments and reproducible benchmarking",
+  "-Collaborated with a postdoctoral researcher to evaluate student-teacher interactions within the reading realm",
   "-Developed an application using Remix (React) to support the HCI study by allowing professors to assign academic papers and visualize student reading metrics with a 95% accuracy rate",
-  "-Integrated MySQL and Django for comprehensive paper tracking, enabling actionable metrics that helped professors identify and address student learning challenges",
-  "-Enabled fine-tuning capabilities for reading metrics, allowing tracking down to a page-by-page level for precise academic insights",
+  "-Integrated MySQL and Django to create customizable, actionable insights, empowering professors to address student learning challenges",
   "-Ensured accessibility standards by collaborating with UB’s Accessibility Resources office"
 ];
+
 
 const points2 = [
   "-Created a QR code based attendance system, using Express.js and Google Sheets / Drive APIs, leading to a 10 minute reduction in attendance taking time",
